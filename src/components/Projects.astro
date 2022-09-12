@@ -14,7 +14,7 @@ const { image, title, description, externalLink, tools } = Astro.props as Props;
 	<a
 		href={externalLink}
 		target="_blank"
-		class="relative xl:w-max z-10 after:absolute after:bg-slate-800/80 after:top-0 after:left-0 after:w-full after:h-full after:rounded-md after:duration-500 after:hover:bg-transparent after:overflow-hidden"
+		class="relative xl:w-max z-10 after:absolute xl:after:bg-slate-800/80 after:top-0 after:left-0 after:w-full after:h-full after:rounded-md after:duration-500 after:hover:bg-transparent after:overflow-hidden"
 	>
 		<img src={image} alt={title} class="rounded-md object-cover aspect-square sm:aspect-auto xl:w-[584px] sm:h-96" />
 	</a>
@@ -37,7 +37,7 @@ const { image, title, description, externalLink, tools } = Astro.props as Props;
 				))
 			}
 		</ul>
-		<ul class="flex items-center xl:justify-end mt-3 gap-x-3 xl:mt-4" id="icons">
+		<ul class="flex items-center xl:justify-end mt-3 gap-x-4 xl:mt-4" id="icons">
 			<slot />
 		</ul>
 	</div>
