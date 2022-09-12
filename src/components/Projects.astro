@@ -16,7 +16,7 @@ const { image, title, description, externalLink, tools } = Astro.props as Props;
 		target="_blank"
 		class="relative xl:w-max z-10 after:absolute xl:after:bg-slate-800/80 after:top-0 after:left-0 after:w-full after:h-full after:rounded-md after:duration-500 after:hover:bg-transparent after:overflow-hidden"
 	>
-		<img src={image} alt={title} class="rounded-md object-cover aspect-square sm:aspect-auto xl:w-[584px] sm:h-96" />
+		<img src={image} alt={title} class="rounded-md object-cover aspect-square sm:aspect-auto xl:w-[584px] sm:h-96" width="320" height="320" />
 	</a>
 	<div class="mt-5 xl:absolute xl:right-0 xl:top-14">
 		<p class="text-amber-200 xl:absolute xl:right-0">Featured Project</p>
