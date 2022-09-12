@@ -1,0 +1,63 @@
+---
+import DropdownRight from '/assets/dropdown-right.svg';
+const experience = [
+	{
+		title: 'Freelancer (UI/UX, Frontend Developer)',
+		company: '',
+		datetime: 'December 2020 - Present // Work Everywhere',
+		link: '',
+		works: ['Create a design for a Company Profile website using Figma', 'Slicing from design company profile become a website using HTML, CSS, Javascript and some library'],
+	},
+	{
+		title: 'Volunteer Frontend Developer',
+		company: '@ Youth Ranger Indonesia',
+		datetime: 'March - August 2022 // Banten, South Tangerang',
+		link: 'https://youthrangerindonesia.com/',
+		works: [
+			'Collaborate create a design for a Company Profile website using Figma',
+			'Website repair according to design',
+			'Improve website SEO',
+			'Communicate and collaborate with Backend Developer, UI/UX, Copywriting and Graphic Designer',
+		],
+	},
+	{
+		title: 'Internship Frontend Developer',
+		company: '@ Boosternesia',
+		datetime: 'January - March 2022 // Bandung, West Java',
+		link: 'https://boosternesia.com/',
+		works: [
+			'Create a design for a Company Profile website using Figma',
+			'Slicing from design company profile become a website using HTML, CSS, Javascript, Swiperjs and AOS',
+			'Create a design dashboard for a Employee Management using Figma',
+			'Slicing from design dashboard employee management become a website using HTML, CSS and Javascript',
+			'Communicate and collaborate with Backend Developer',
+		],
+	},
+];
+---
+
+<div class="mt-8 space-y-6">
+	{
+		experience.map((exp) => (
+			<ol>
+				<li>
+					<h4 class="text-slate-300 text-lg font-semibold">
+						{exp.title}{' '}
+						<a href={exp.link} target={exp.link} class="text-amber-300 font-medium">
+							{exp.company}
+						</a>
+					</h4>
+					<p class="text-sm text-slate-400 mt-1">{exp.datetime}</p>
+					<ul class="mt-2">
+						{exp.works.map((work) => (
+							<li class="flex items-center space-y-1">
+								<img src={DropdownRight} alt="dropdown-right" class="translate-y-[2px]" />
+								<span class="text-slate-400 text-sm sm:text-base">{work}</span>
+							</li>
+						))}
+					</ul>
+				</li>
+			</ol>
+		))
+	}
+</div>

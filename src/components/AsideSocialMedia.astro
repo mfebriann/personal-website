@@ -1,0 +1,40 @@
+---
+export interface Props {
+	visibility?: string;
+}
+
+const { visibility = false } = Astro.props as Props;
+
+const allSocialMedia = [
+	{
+		name: 'Github',
+		link: 'http://github.com/mfebriann',
+	},
+	{
+		name: 'LinkedIn',
+		link: 'https://linkedin.com/in/mfebriann',
+	},
+	{
+		name: 'Instagram',
+		link: 'https://www.instagram.com/mfebrian22/',
+	},
+	{
+		name: 'Telegram',
+		link: 'https://t.me/riann18',
+	},
+];
+---
+
+<aside class={`${visibility === 'true' ? 'block sm:hidden' : 'hidden'} sm:mt-0 sm:fixed sm:bottom-0 sm:after:w-[1px] sm:after:h-20 sm:after:bg-white/20 sm:flex sm:flex-col sm:items-center sm:gap-y-5 `}>
+	<ul class="flex items-center gap-2 justify-center sm:flex-col sm:gap-5 sm:justify-start">
+		{
+			allSocialMedia.map((socialMedia) => (
+				<li>
+					<a href={socialMedia.link} title={socialMedia.name} target="_blank" class="group">
+						<img src={`/assets/${socialMedia.name.toLowerCase()}.svg`} alt={socialMedia.name} class="group-hover:-translate-y-1 block group-hover:opacity-50 duration-300" />
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</aside>

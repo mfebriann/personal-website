@@ -1,0 +1,44 @@
+---
+export interface Props {
+	image: string;
+	title: string;
+	description: string;
+	externalLink: string;
+	tools: string[];
+}
+
+const { image, title, description, externalLink, tools } = Astro.props as Props;
+---
+
+<div class="flex flex-col relative">
+	<a
+		href={externalLink}
+		target="_blank"
+		class="relative xl:w-max z-10 after:absolute after:bg-slate-800/80 after:top-0 after:left-0 after:w-full after:h-full after:rounded-md after:duration-500 after:hover:bg-transparent after:overflow-hidden"
+	>
+		<img src={image} alt={title} class="rounded-md object-cover aspect-square sm:aspect-auto xl:w-[584px] sm:h-96" />
+	</a>
+	<div class="mt-5 xl:absolute xl:right-0 xl:top-14">
+		<p class="text-amber-200 xl:absolute xl:right-0">Featured Project</p>
+
+		<a href={externalLink} target="_blank" class="text-slate-300 font-semibold mt-2 xl:mt-7 block text-2xl duration-300 hover:text-amber-300 xl:w-max xl:ml-auto">{title}</a>
+
+		<div class="bg-slate-800 ring-1 ring-slate-300/30 w-full xl:w-[480px] p-3 xl:p-4 rounded-sm xl:rounded-md shadow-3xl mt-5 relative z-10">
+			<p class="text-sm text-slate-300 leading-6">
+				{description}
+			</p>
+		</div>
+		<ul class="text-slate-400 text-sm flex flex-wrap items-center xl:justify-end mt-5 gap-x-3 gap-y-1 relative z-10 xl:w-max xl:ml-auto xl:flex-nowrap">
+			{
+				tools.map((tool) => (
+					<li>
+						<span>{tool}</span>
+					</li>
+				))
+			}
+		</ul>
+		<ul class="flex items-center xl:justify-end mt-3 gap-x-3 xl:mt-4" id="icons">
+			<slot />
+		</ul>
+	</div>
+</div>

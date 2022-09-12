@@ -1,0 +1,114 @@
+---
+import BaseLayouts from '../layouts/BaseLayouts.astro';
+import Profile from '/assets/rian.jpg';
+import Skills from '../components/Skills.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<BaseLayouts>
+	<section>
+		<p class="text-amber-300 sm:text-lg">Hi there 👋, my name is</p>
+		<h1 class="mt-4 text-slate-200 text-3xl font-semibold sm:text-5xl xl:text-6xl">Muhammad Febrian</h1>
+		<h2 class="mt-2 text-slate-400 text-2xl font-semibold sm:text-5xl sm:mt-4">I love making things on the web.</h2>
+		<p class="text-slate-400 mt-5 leading-6 md:w-[600px]">I'm a Frontend Web specializing in building (and occasionally designing) website. I am currently working as a freelancer.</p>
+
+		<a href="mailto:mfebriann18@gmail.com" class="font-semibold text-amber-300 border-amber-300 border rounded-md px-10 py-3 text-xl mt-10 block w-max hover:bg-amber-300/10">Say Hello 👋</a>
+	</section>
+
+	<section class="section" id="about">
+		<h3 class="title-content">About</h3>
+		<div class="mt-8 text-slate-400 flex flex-col gap-10 xl:flex-row xl:gap-x-5">
+			<div class="space-y-3 xl:w-[580px]">
+				<p>Hello! My name is Rian and I like to make something on the internet. I am interested in web development in 2020. Where I am interested in learning about HTML and CSS.</p>
+				<p>
+					I have also been a volunteer and created a project website, namely <a href="https://boosternesia.com/" target="_blank" class="text-amber-300 text-medium hover:opacity-80 underline">Boosternesia</a> and <a
+						href="https://youthrangerindonesia.com/"
+						target="_blank"
+						class="text-amber-300 text-medium hover:opacity-80 underline">Youth Ranger Indonesia</a
+					>. I also have a personal <a href="https://blogrian.my.id/" target="_blank" class="text-amber-300 text-medium hover:opacity-80 underline">Blog</a> to write some notes that might be useful for you. I am also interested in making website
+					designs, usually I use Figma in making a website design.
+				</p>
+				<p>I created some projects and I put them on my github account.</p>
+				<p>Here are some technologies I can use:</p>
+
+				<Skills skills={['HTML5', 'CSS3', 'Javascript', 'TailwindCSS', 'WordPress', 'Figma']} />
+			</div>
+			<div
+				class="relative w-56 h-56 mx-auto after:absolute after:left-0 after:top-0 after:w-full after:h-full after:rounded-sm after:mix-blend-multiply after:bg-amber-300 before:border-2 after:duration-300 before:absolute before:border-amber-300 before:w-full before:h-full before:-z-10 before:-right-5 before:top-5 before:rounded-sm before:duration-300 before:ease-in hover:after:bg-transparent hover:before:-right-3 hover:before:top-3 sm:w-72 sm:h-72"
+			>
+				<img src={Profile} alt="profile" class="w-full h-full object-cover rounded-sm" />
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="experience">
+		<h3 class="title-content">Experience</h3>
+		<Experience />
+	</section>
+
+	<section class="section" id="projects">
+		<h3 class="title-content">Projects</h3>
+		<div
+			class="mt-8 grid gap-y-16 xl:gap-y-32 xl:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)_div]:right-auto xl:[&>*:nth-child(even)_div]:left-0 xl:[&>*:nth-child(even)_div_p]:right-auto xl:[&>*:nth-child(even)_div_p]:left-0 xl:[&>*:nth-child(even)_div_a]:ml-0 xl:[&>*:nth-child(even)_div_ul]:ml-0 xl:[&>*:nth-child(even)_div_ul]:justify-start"
+		>
+			<Projects
+				image="/assets/projects/cari-filmnyok.png"
+				title="Cari FilmNyok"
+				description="A simple website for search movies and know about the details of the movie. This website just for me to learn about Javascript async/await, Module Bundler (Webpack), LocalStorage and TailwindCSS."
+				externalLink="https://mfebriann.github.io/Cari-FilmNyok/"
+				tools={['HTML5', 'TailwindCSS', 'Javascript', 'PokeAPI']}
+			>
+				<li>
+					<a href="https://github.com/mfebriann/Cari-FilmNyok" title="Github" target="_blank" class="hover:opacity-80">
+						<img src="/assets/github.svg" alt="Github" />
+					</a>
+				</li>
+				<li>
+					<a href="https://mfebriann.github.io/Cari-FilmNyok/" title="External Link" target="_blank" class="hover:opacity-80">
+						<img src="/assets/external-link.svg" alt="External Link" />
+					</a>
+				</li>
+			</Projects>
+
+			<Projects
+				image="/assets/projects/pokedek.png"
+				title="Pokedek?"
+				description="Simple website about finding pokemon and learning about API. API used is PokeAPI."
+				externalLink="https://mfebriann.github.io/pokemon-pokedek/"
+				tools={['HTML5', 'TailwindCSS', 'Javascript', 'Webpack']}
+			>
+				<li>
+					<a href="https://github.com/mfebriann/pokemon-pokedek" title="Github" target="_blank" class="hover:opacity-80">
+						<img src="/assets/github.svg" alt="Github" />
+					</a>
+				</li>
+				<li>
+					<a href="https://mfebriann.github.io/pokemon-pokedek/" title="External Link" target="_blank" class="hover:opacity-80">
+						<img src="/assets/external-link.svg" alt="External Link" />
+					</a>
+				</li>
+			</Projects>
+
+			<Projects
+				image="/assets/projects/yri.png"
+				title="Youth Ranger Indonesia"
+				description="Improved the appearance of the Youth Ranger Indonesia website to make it look cooler."
+				externalLink="https://youthrangerindonesia.com/"
+				tools={['HTML5', 'CSS', 'Javascript', 'SwiperJS', 'ScrollbarJS']}
+			>
+				<li>
+					<a href="https://youthrangerindonesia.com/" title="External Link" target="_blank" class="hover:opacity-80">
+						<img src="/assets/external-link.svg" alt="External Link" />
+					</a>
+				</li>
+			</Projects>
+		</div>
+	</section>
+</BaseLayouts>
+
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+</style>

@@ -1,0 +1,17 @@
+---
+import '../styles/base.css';
+import logo from '/assets/logo.png';
+const { title = 'Muhammad Febrian', description = 'Only a Personal Website that explains Who I Am? And what i have created.' } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="theme-color" content="#0f172a" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+
+<link rel="icon" type="image/svg+xml" href={logo} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
