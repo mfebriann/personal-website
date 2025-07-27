@@ -53,6 +53,19 @@ import Projects from '../components/Projects.astro';
 			class="mt-8 grid gap-y-16 xl:gap-y-32 xl:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)_div]:right-auto xl:[&>*:nth-child(even)_div]:left-0 xl:[&>*:nth-child(even)_div_p]:right-auto xl:[&>*:nth-child(even)_div_p]:left-0 xl:[&>*:nth-child(even)_div_a]:ml-0 xl:[&>*:nth-child(even)_div_ul]:ml-0 xl:[&>*:nth-child(even)_div_ul]:justify-start"
 		>
 			<Projects
+				image="/assets/projects/mckystudiolabs.png"
+				title="MCKY Studio Labs"
+				description="A creative studio dedicated to developing original games. Focus on strong storytelling and striking visuals, believing that games can convey extraordinary messages, emotions, and experiences. The game includes 'Echoes Of Paur' and 'PARMAN'."
+				externalLink="https://www.mckystudiolabs.com/"
+				tools={['React', 'Vite', 'TypeScript', 'TailwindCSS']}
+			>
+				<li>
+					<a href="https://www.mckystudiolabs.com/" title="External Link" target="_blank" class="hover:opacity-80">
+						<img src="/assets/external-link.svg" alt="External Link" width="24" height="24" />
+					</a>
+				</li>
+			</Projects>
+			<Projects
 				image="/assets/projects/cari-filmnyok.png"
 				title="Cari FilmNyok"
 				description="A simple website for search movies and know about the details of the movie. This website just for me to learn about Javascript async/await, Module Bundler (Webpack), LocalStorage and TailwindCSS."
