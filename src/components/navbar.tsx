@@ -23,6 +23,7 @@ const githubLink = baseProfile.github && baseProfile.github.length > 0 ? (basePr
 
 export function Navbar() {
 	const [mobileOpen, setMobileOpen] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
 
 	const initials = useMemo(() => {
 		return baseProfile.name
@@ -40,6 +41,18 @@ export function Navbar() {
 		};
 	}, [mobileOpen]);
 
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 10);
+		};
+
+		handleScroll();
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	const closeMobile = () => setMobileOpen(false);
 
 	return (
@@ -49,7 +62,9 @@ export function Navbar() {
 				<meta name="description" content={baseProfile.about} />
 			</Head>
 
-			<header className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-xl transition">
+			<header
+				className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${isScrolled ? 'border-white/20 bg-white/80 backdrop-blur-xl shadow-sm' : 'border-transparent bg-transparent shadow-none'}`}
+			>
 				<div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
 					<Link href="#profile" className="flex items-center gap-2 text-lg font-semibold tracking-tight">
 						<Image src={'/logo.png'} alt="logo" width={36} height={36} />
