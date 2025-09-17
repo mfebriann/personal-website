@@ -43,11 +43,11 @@ export function HeroSection() {
 						</a>
 					</div>
 					<div className="grid w-full grid-cols-2 gap-6 rounded-3xl border border-white/10 bg-white/20 p-6 text-left shadow-xl backdrop-blur lg:w-3/4">
-						<div>
+						<div className="flex flex-col justify-between">
 							<p className="text-xs uppercase tracking-wide text-slate-500">Years Experience</p>
 							<p className="mt-2 text-2xl font-semibold text-slate-900">4+</p>
 						</div>
-						<div>
+						<div className="flex flex-col justify-between">
 							<p className="text-xs uppercase tracking-wide text-slate-500">Projects</p>
 							<p className="mt-2 text-2xl font-semibold text-slate-900">{projectCountLabel}</p>
 						</div>

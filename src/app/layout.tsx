@@ -48,7 +48,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" suppressHydrationWarning style={{ colorScheme: 'light' }}>
 			<body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-slate-100 text-slate-900 antialiased transition-colors`}>
 				<ThemeProvider>
 					<div className="relative flex min-h-screen flex-col overflow-hidden">
