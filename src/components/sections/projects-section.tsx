@@ -25,10 +25,18 @@ type Project = {
 
 export const FEATURED_PROJECTS: FeaturedProject[] = [
 	{
+		title: 'Sopwerhos',
+		description: 'Company profile website built with modern Next.js stack. Showcasing services, clean design, and responsive layout optimized for businesses in Indonesia.',
+		image: '/projects/sopwerhos.webp',
+		link: 'https://sopwerhos.vercel.app/',
+		github: '',
+		tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Redux', 'Radix', 'Framer Motion', 'Vibe Coding'],
+	},
+	{
 		title: 'Gemilang Taruna',
 		description:
 			'A modern website for Gemilang Taruna, a local food stall established in 2023. It showcases the brand’s identity, menu offerings, and story with a clean design. Key features include a responsive layout, product gallery, and contact section, making it easy for customers to explore the menu and connect with the business.',
-		image: '/projects/gemilang-taruna.png',
+		image: '/projects/gemilang-taruna.webp',
 		link: 'https://gemilang-taruna-website.vercel.app/',
 		github: 'https://github.com/mfebriann/GemilangTaruna_Website',
 		tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Redux', 'Framer Motion', 'Vibe Coding'],
@@ -37,21 +45,20 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
 		title: 'MCKY Studio Labs',
 		description:
 			"A creative studio dedicated to developing original games. Focus on strong storytelling and striking visuals, believing that games can convey extraordinary messages, emotions, and experiences. The game includes 'Echoes Of Paur' and 'PARMAN'.",
-		image: '/projects/mckystudiolabs.png',
+		image: '/projects/mckystudiolabs.webp',
 		link: 'https://www.mckystudiolabs.com/',
 		tags: ['ReactJS', 'Typescript', 'TailwindCSS', 'Vite'],
-	},
-	{
-		title: 'Cari FilmNyok',
-		description: 'A simple website for search movies and know about the details of the movie. This website just for me to learn about Javascript async/await, Module Bundler (Webpack), LocalStorage and TailwindCSS.',
-		image: '/projects/cari-filmnyok.png',
-		link: 'https://mfebriann.github.io/Cari-FilmNyok/',
-		github: 'https://github.com/mfebriann/Cari-FilmNyok',
-		tags: ['HTML5', 'TailwindCSS', 'Javascript', 'Webpack', 'OMDb API'],
 	},
 ];
 
 export const OTHER_PROJECTS: Project[] = [
+	{
+		title: 'Cari FilmNyok',
+		description: 'A simple website for search movies and know about the details of the movie. This website just for me to learn about Javascript async/await, Module Bundler (Webpack), LocalStorage and TailwindCSS.',
+		link: 'https://mfebriann.github.io/Cari-FilmNyok/',
+		github: 'https://github.com/mfebriann/Cari-FilmNyok',
+		tags: ['HTML5', 'TailwindCSS', 'Javascript', 'Webpack', 'OMDb API'],
+	},
 	{
 		title: 'Pokedek',
 		description: 'Simple website about finding pokemon and learning about API. API used is PokeAPI and this website inspired by Pokemon Pokedex Ebon',
