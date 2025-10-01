@@ -13,12 +13,12 @@ const EXPERIENCES = [
 		highlights: ['Make website company profile', 'Make website about agency', 'Maintenance company profile website'],
 	},
 	{
-		role: 'Web Developer',
+		role: 'Frontend Web & Mobile Developer',
 		company: 'XRUN Metaverse Indonesia',
 		period: 'September 2022 - May 2025',
 		location: '',
 		type: 'work' as const,
-		highlights: ['Make website company profile', 'Make games with Unreal Engine 5', 'Make mobile application with React Native'],
+		highlights: ['Make website company profile', 'Make layouting games with Unreal Engine 5', 'Make Metahint App', 'Make XRUN App', 'Make Afterlife App'],
 	},
 	{
 		role: 'WordPress Developer',
