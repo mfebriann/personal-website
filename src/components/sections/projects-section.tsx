@@ -66,6 +66,13 @@ export const OTHER_PROJECTS: Project[] = [
 		github: 'https://github.com/mfebriann/pokemon-pokedekV2',
 		link: 'https://pokemon-pokedek-v2.netlify.app/',
 	},
+	{
+		title: 'Mechabot',
+		description: 'Simple website for showcasing and exploring NFT collections. The site serves as a gallery to display digital artworks and connects to OpenSea for trading.',
+		tags: ['HTML', 'TailwindCSS', 'Javascript'],
+		github: 'https://github.com/mfebriann/Mechabot',
+		link: 'https://mechabot.vercel.app/',
+	},
 ];
 
 export function ProjectsSection() {
