@@ -57,7 +57,7 @@ export const OTHER_PROJECTS: Project[] = [
 		description: 'A simple website to practice English singular & plural nouns with randomized quizzes and saved progress—built as a learning project for React + TypeScript, Vite, React Router, localStorage, and Tailwind CSS.',
 		link: 'https://practice-vocabulary-theta.vercel.app/',
 		github: 'https://github.com/mfebriann/Practice_Vocabulary',
-		tags: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'React Router', 'LocalStorage'],
+		tags: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'React Router', 'LocalStorage', 'Vibe Coding'],
 	},
 	{
 		title: 'Cari FilmNyok',
