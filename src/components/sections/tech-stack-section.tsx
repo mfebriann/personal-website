@@ -1,16 +1,18 @@
 ﻿'use client';
 
 import { motion } from 'framer-motion';
-import { SiBootstrap, SiCss3, SiFigma, SiHtml5, SiJavascript, SiTypescript, SiJquery, SiMysql, SiPhp, SiReact, SiSass, SiTailwindcss, SiWordpress } from 'react-icons/si';
+import { SiBootstrap, SiCss3, SiFigma, SiHtml5, SiJavascript, SiTypescript, SiJquery, SiMysql, SiPhp, SiReact, SiSass, SiTailwindcss, SiWordpress, SiLaravel, SiNodedotjs } from 'react-icons/si';
 
 const TECHNOLOGIES = [
 	{ name: 'HTML5', icon: SiHtml5 },
 	{ name: 'CSS3', icon: SiCss3 },
 	{ name: 'JavaScript', icon: SiJavascript },
 	{ name: 'TypeScript', icon: SiTypescript },
+	{ name: 'Node.js', icon: SiNodedotjs },
 	{ name: 'TailwindCSS', icon: SiTailwindcss },
 	{ name: 'Bootstrap', icon: SiBootstrap },
 	{ name: 'PHP', icon: SiPhp },
+	{ name: 'Laravel', icon: SiLaravel },
 	{ name: 'MySQL', icon: SiMysql },
 	{ name: 'ReactJS', icon: SiReact },
 	{ name: 'React Native', icon: SiReact },
