@@ -25,21 +25,21 @@ type Project = {
 
 export const FEATURED_PROJECTS: FeaturedProject[] = [
 	{
-		title: 'Sopwerhos',
-		description: 'Company profile website built with modern Next.js stack. Showcasing services, clean design, and responsive layout optimized for businesses in Indonesia.',
-		image: '/projects/sopwerhos.webp',
-		link: 'https://sopwerhos.vercel.app/',
+		title: 'Youtz Media',
+		description:
+			'YoutzMedia is a digital media platform that delivers articles, information, and educational content through a modern and accessible interface. Developed in collaboration with a backend team to ensure a fast, stable, and well-structured system.',
+		image: '/projects/youtzmedia.png',
+		link: 'https://youtzmedia.id/',
 		github: '',
-		tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Redux', 'Radix', 'Framer Motion', 'Vibe Coding'],
+		tags: ['Laravel', 'TailwindCSS'],
 	},
 	{
-		title: 'Gemilang Taruna',
-		description:
-			'A modern website for Gemilang Taruna, a local food stall established in 2023. It showcases the brand’s identity, menu offerings, and story with a clean design. Key features include a responsive layout, product gallery, and contact section, making it easy for customers to explore the menu and connect with the business.',
-		image: '/projects/gemilang-taruna.webp',
-		link: 'https://gemilang-taruna-website.vercel.app/',
-		github: 'https://github.com/mfebriann/GemilangTaruna_Website',
-		tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Redux', 'Framer Motion', 'Vibe Coding'],
+		title: 'MARS Law Firm',
+		description: 'Mars Law Firm Office is a law-firm website presenting its services, firm profile and contact information in a professional layout. Built with a backend team for a robust, well-structured, and responsive system.',
+		image: '/projects/marslawfirm.png',
+		link: 'https://marslawfirmoffice.com/',
+		github: '',
+		tags: ['Laravel', 'TailwindCSS'],
 	},
 	{
 		title: 'MCKY Studio Labs',
@@ -53,8 +53,38 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
 
 export const OTHER_PROJECTS: Project[] = [
 	{
+		title: 'FYP Media',
+		description:
+			'FYP Media is a digital media platform offering articles, news, and educational content through a clean and user-friendly interface. Developed in collaboration with a backend team to ensure performance, structure, and reliability.',
+		link: 'https://fypmedia.id/',
+		github: '',
+		tags: ['Laravel', 'TailwindCSS'],
+	},
+	{
+		title: 'Harly Law',
+		description: 'A law-firm website presenting the firm’s brand identity, services, team, articles, gallery, and contact information in a clean and professional layout for clients and visitors.',
+		link: 'https://harlylaw.com/',
+		github: '',
+		tags: ['WordPress', 'HTML', 'CSS', 'JavaScript'],
+	},
+	{
+		title: 'Sopwerhos',
+		description: 'Company profile website built with modern Next.js stack. Showcasing services, clean design, and responsive layout optimized for businesses in Indonesia.',
+		link: 'https://sopwerhos.vercel.app/',
+		github: '',
+		tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Redux', 'Radix', 'Framer Motion', 'Vibe Coding'],
+	},
+	{
+		title: 'Gemilang Taruna',
+		description:
+			"A modern website for Gemilang Taruna, a local food stall established in 2023. It showcases the brand's identity, menu offerings, and story with a clean design. Key features include a responsive layout, product gallery, and contact section, making it easy for customers to explore the menu and connect with the business.",
+		link: 'https://gemilang-taruna-website.vercel.app/',
+		github: 'https://github.com/mfebriann/GemilangTaruna_Website',
+		tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Redux', 'Framer Motion', 'Vibe Coding'],
+	},
+	{
 		title: 'Practice Vocabulary',
-		description: 'A simple website to practice English singular & plural nouns with randomized quizzes and saved progress—built as a learning project for React + TypeScript, Vite, React Router, localStorage, and Tailwind CSS.',
+		description: 'A simple website to practice English singular & plural nouns with randomized quizzes and saved progress-built as a learning project for React + TypeScript, Vite, React Router, localStorage, and Tailwind CSS.',
 		link: 'https://practice-vocabulary-theta.vercel.app/',
 		github: 'https://github.com/mfebriann/Practice_Vocabulary',
 		tags: ['React', 'TypeScript', 'Vite', 'TailwindCSS', 'React Router', 'LocalStorage', 'Vibe Coding'],
