@@ -7,7 +7,7 @@ const EXPERIENCES = [
 	{
 		role: 'IT Developer',
 		company: 'PT Kreasi Potensi Indonesia',
-		period: 'May 2025 - Current',
+		period: 'May 2025 - Present',
 		location: '',
 		type: 'work' as const,
 		highlights: ['Make website company profile', 'Make website about agency', 'Maintenance company profile website'],
