@@ -13,8 +13,8 @@ const EXPERIENCES = [
 		highlights: ['Make website company profile', 'Make website about agency', 'Maintenance company profile website'],
 	},
 	{
-		role: 'Frontend Web & Mobile Developer',
-		company: 'XRUN Metaverse Indonesia',
+		role: 'Fullstack Web & Mobile Developer',
+		company: 'PT XRUN Metaverse Indonesia',
 		period: 'September 2022 - May 2025',
 		location: '',
 		type: 'work' as const,

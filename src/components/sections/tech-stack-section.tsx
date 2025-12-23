@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { motion } from 'framer-motion';
+import { RiNextjsLine } from 'react-icons/ri';
 import { SiBootstrap, SiCss3, SiFigma, SiHtml5, SiJavascript, SiTypescript, SiJquery, SiMysql, SiPhp, SiReact, SiSass, SiTailwindcss, SiWordpress, SiLaravel, SiNodedotjs } from 'react-icons/si';
 
 const TECHNOLOGIES = [
@@ -15,6 +16,7 @@ const TECHNOLOGIES = [
 	{ name: 'Laravel', icon: SiLaravel },
 	{ name: 'MySQL', icon: SiMysql },
 	{ name: 'ReactJS', icon: SiReact },
+	{ name: 'NextJS', icon: RiNextjsLine },
 	{ name: 'React Native', icon: SiReact },
 	{ name: 'WordPress', icon: SiWordpress },
 	{ name: 'jQuery', icon: SiJquery },
