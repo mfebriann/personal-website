@@ -52,14 +52,14 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
 ];
 
 export const OTHER_PROJECTS: Project[] = [
-	{
-		title: 'FYP Media',
-		description:
-			'FYP Media is a digital media platform offering articles, news, and educational content through a clean and user-friendly interface. Developed in collaboration with a backend team to ensure performance, structure, and reliability.',
-		link: 'https://fypmedia.id/',
-		github: '',
-		tags: ['Laravel', 'TailwindCSS'],
-	},
+	// {
+	// 	title: 'FYP Media',
+	// 	description:
+	// 		'FYP Media is a digital media platform offering articles, news, and educational content through a clean and user-friendly interface. Developed in collaboration with a backend team to ensure performance, structure, and reliability.',
+	// 	link: 'https://fypmedia.id/',
+	// 	github: '',
+	// 	tags: ['Laravel', 'TailwindCSS'],
+	// },
 	{
 		title: 'Harly Law',
 		description: 'A law-firm website presenting the firm’s brand identity, services, team, articles, gallery, and contact information in a clean and professional layout for clients and visitors.',
