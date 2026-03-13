@@ -1,14 +1,22 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Briefcase, ChevronRight } from 'lucide-react';
+import {motion} from 'framer-motion';
+import {Briefcase, ChevronRight} from 'lucide-react';
 
 const EXPERIENCES = [
+	{
+		role: 'Fullstack Intern Developer',
+		company: 'DBKlik',
+		period: 'January 2026 - Present',
+		location: 'Surabaya, East Java',
+		type: 'work' as const,
+		highlights: ['Improve responsive layout of the product portal website', 'Fix activity log feature on the product portal website', 'Fix user and roles management feature on the product portal website', 'Develop rebate program feature for the product portal website'],
+	},
 	{
 		role: 'IT Developer',
 		company: 'PT Kreasi Potensi Indonesia',
 		period: 'May 2025 - Present',
-		location: '',
+		location: 'Banten, South Tangerang',
 		type: 'work' as const,
 		highlights: ['Make website company profile', 'Make website about agency', 'Maintenance company profile website'],
 	},
@@ -34,12 +42,7 @@ const EXPERIENCES = [
 		period: 'March - August 2022',
 		location: 'Banten, South Tangerang',
 		type: 'work' as const,
-		highlights: [
-			'Collaborate create a design for a Company Profile website using Figma',
-			'Website repair according to design',
-			'Improve website SEO',
-			'Communicate and collaborate with Backend Developer, UI/UX, Copywriting and Graphic Designer',
-		],
+		highlights: ['Collaborate create a design for a Company Profile website using Figma', 'Website repair according to design', 'Improve website SEO', 'Communicate and collaborate with Backend Developer, UI/UX, Copywriting and Graphic Designer'],
 	},
 	{
 		role: 'Internship Frontend Developer',
@@ -58,8 +61,8 @@ const EXPERIENCES = [
 ];
 
 const cardVariants = {
-	hidden: { opacity: 0, y: 30 },
-	visible: { opacity: 1, y: 0 },
+	hidden: {opacity: 0, y: 30},
+	visible: {opacity: 1, y: 0},
 };
 
 export function ExperienceSection() {
@@ -80,9 +83,9 @@ export function ExperienceSection() {
 								className="relative flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/30 p-6 shadow-xl backdrop-blur md:flex-row md:items-start md:gap-8"
 								initial="hidden"
 								whileInView="visible"
-								viewport={{ once: true, amount: 0.3 }}
+								viewport={{once: true, amount: 0.3}}
 								variants={cardVariants}
-								transition={{ duration: 0.5, delay: index * 0.1 }}
+								transition={{duration: 0.5, delay: index * 0.1}}
 							>
 								<div className="hidden md:flex">
 									<div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-500/10 text-sky-500">

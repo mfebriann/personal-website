@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Terminal } from 'lucide-react';
-import { SiGit, SiGithub, SiGitlab, SiLaragon } from 'react-icons/si';
-import { BiLogoVisualStudio } from 'react-icons/bi';
+import {motion} from 'framer-motion';
+import {Terminal} from 'lucide-react';
+import {SiFigma, SiGit, SiGithub, SiGitlab, SiLaragon, SiMysql} from 'react-icons/si';
+import {BiLogoVisualStudio} from 'react-icons/bi';
 
 const TOOLS = [
 	{
@@ -22,6 +22,7 @@ const TOOLS = [
 		name: 'VSCode',
 		icon: BiLogoVisualStudio,
 	},
+	{name: 'MySQL', icon: SiMysql},
 	{
 		name: 'Laragon',
 		icon: SiLaragon,
@@ -30,6 +31,7 @@ const TOOLS = [
 		name: 'Tabby',
 		icon: Terminal,
 	},
+	{name: 'Figma', icon: SiFigma},
 ];
 
 export function ToolsSection() {
@@ -42,15 +44,8 @@ export function ToolsSection() {
 				</div>
 
 				<div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
-					{TOOLS.map(({ name, icon: Icon }, index) => (
-						<motion.div
-							key={name}
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true, amount: 0.4 }}
-							transition={{ duration: 0.4, delay: index * 0.05 }}
-							className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/20 p-6 text-center shadow-lg backdrop-blur"
-						>
+					{TOOLS.map(({name, icon: Icon}, index) => (
+						<motion.div key={name} initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, amount: 0.4}} transition={{duration: 0.4, delay: index * 0.05}} className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/20 p-6 text-center shadow-lg backdrop-blur">
 							<div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500/20 via-sky-400/10 to-transparent text-slate-900 transition group-hover:-translate-y-1 group-hover:text-sky-500">
 								<Icon className="h-8 w-8" />
 							</div>
